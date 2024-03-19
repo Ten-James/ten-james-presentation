@@ -27,11 +27,11 @@ export default function Home() {
         >
           <img src="/logo.svg" alt="logo" />
         </motion.div>
+        <p className="opacity-15 absolute bottom-0 left-[50%] text-nowrap translate-x-[-50%] z-10 translate-y-[-2rem]">
+          Click to continue
+        </p>
       </div>
       <QrCodePopOver />
-      <p className="opacity-15 absolute bottom-0 left-[50%] text-nowrap translate-x-[-50%] z-10 translate-y-[-2rem]">
-        Click to continue
-      </p>
     </>
   );
 }

@@ -8,7 +8,7 @@ export default function Page() {
   const router = useRouter();
   const pathname = usePathname();
   return (
-    <div className="w-8/12 flex gap-2 flex-col lg:flex-row justify-center items-center">
+    <div className="w-8/12 flex gap-10 flex-col lg:flex-row justify-center items-center">
       <div className="relative cursor-pointer">
         <img
           alt="Me"

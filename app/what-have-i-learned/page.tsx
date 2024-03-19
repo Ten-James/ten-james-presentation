@@ -34,8 +34,10 @@ export default function Page() {
       }}
       className="w-full h-full flex flex-col items-center justify-between md:gap-10 p-4 lg:p-0"
     >
-      <p className="uppercase text-center text-[4rem]">What got me there?</p>
-      <div className="w-7/12 grid lg:grid-cols-3 place-items-center">
+      <p className="uppercase text-center text-[2rem] lg:text-[4rem]">
+        What got me there?
+      </p>
+      <div className="w-7/12 grid lg:grid-cols-3 gap-10 lg:gap-0 place-items-center">
         {abilities
           .filter((_, index) => index < state)
           .map((ability, index) => (
