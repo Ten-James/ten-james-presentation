@@ -1,7 +1,8 @@
 "use client";
 import { NextPressentation } from "@/lib/presentation-parts";
-import { usePathname, useRouter } from "next/navigation";
-export default function Page({ params }: { params: { job: string } }) {
+import { useRouter, usePathname } from "next/navigation";
+
+export default function Page() {
   const router = useRouter();
   const pathname = usePathname();
   return (
@@ -9,8 +10,9 @@ export default function Page({ params }: { params: { job: string } }) {
       onClick={() => {
         router.push(NextPressentation(pathname));
       }}
+      className="w-full h-full grid place-items-center"
     >
-      My Post: {params.job}
+      <img src="/meme.jpg" className="max-w-[90vw] lg:w-1/3" />
     </div>
   );
 }
