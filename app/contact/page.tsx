@@ -2,7 +2,6 @@
 import { NextPressentation } from "@/lib/presentation-parts";
 import { GithubIcon, LinkedinIcon } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
 
 export default function Page() {
@@ -11,7 +10,7 @@ export default function Page() {
   return (
     <div className="w-8/12 flex gap-2 flex-col lg:flex-row justify-center items-center">
       <div className="relative cursor-pointer">
-        <Image
+        <img
           alt="Me"
           onClick={() => router.push(NextPressentation(pathname))}
           src="/me.jfif"
@@ -35,8 +34,20 @@ export default function Page() {
         <LinkedinIcon size={120} />
       </Link>
       <div className="hidden pl-10 gap-10 lg:flex flex-col flex-grow">
-        <p className="block text-[3rem]">www.github.com/Ten-James</p>
-        <p className="block text-[3rem]">www.linkedin.com/in/jakub-indrak/</p>
+        <Link
+          href="https://github.com/Ten-James"
+          target="_blank"
+          className="block text-[3rem]"
+        >
+          www.github.com/Ten-James
+        </Link>
+        <Link
+          href="https://www.linkedin.com/in/jakub-indrak/"
+          target="_blank"
+          className="block text-[3rem]"
+        >
+          www.linkedin.com/in/jakub-indrak/
+        </Link>
       </div>
     </div>
   );

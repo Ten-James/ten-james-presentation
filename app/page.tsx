@@ -2,7 +2,6 @@
 import { QrCodePopOver } from "@/components/qr-code-popover";
 import { NextPressentation } from "@/lib/presentation-parts";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
@@ -26,7 +25,7 @@ export default function Home() {
             repeat: Infinity,
           }}
         >
-          <Image src="/logo.svg" alt="logo" />
+          <img src="/logo.svg" alt="logo" />
         </motion.div>
       </div>
       <QrCodePopOver />

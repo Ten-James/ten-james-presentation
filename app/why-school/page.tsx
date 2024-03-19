@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { NextPressentation } from "@/lib/presentation-parts";
 import { useRouter, usePathname } from "next/navigation";
 
@@ -13,7 +12,7 @@ export default function Page() {
       }}
       className="w-full h-full grid place-items-center"
     >
-      <Image alt="meme" src="/meme.jpg" className="max-w-[90vw] lg:w-1/3" />
+      <img alt="meme" src="/meme.jpg" className="max-w-[90vw] lg:w-1/3" />
     </div>
   );
 }

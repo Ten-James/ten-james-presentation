@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={inter.className}>
-        <main className="relative z-10 min-h-screen grid place-items-center md:p-10 overflow-hidden">
+        <main className="relative z-10 min-h-dvh grid place-items-center md:p-10 overflow-hidden">
           {children}
         </main>
         <BackgroundBeams />

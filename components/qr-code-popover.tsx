@@ -1,5 +1,4 @@
 import { FC } from "react";
-import Image from "next/image";
 import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
 import { QrCodeIcon } from "lucide-react";
 
@@ -12,7 +11,7 @@ export const QrCodePopOver: FC = () => (
         </div>
       </PopoverTrigger>
       <PopoverContent className="w-90" side="top" align="end">
-        <Image alt="qr" src="/qr.png" width={500} />
+        <img alt="qr" src="/qr.png" width={500} />
       </PopoverContent>
     </Popover>
   </div>
