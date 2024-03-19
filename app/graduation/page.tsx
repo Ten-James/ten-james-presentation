@@ -1,6 +1,7 @@
 "use client";
 import { NextPressentation } from "@/lib/presentation-parts";
 import { useRouter, usePathname } from "next/navigation";
+import Image from "next/image";
 
 export default function Page() {
   const router = useRouter();
@@ -12,7 +13,7 @@ export default function Page() {
       }}
       className="w-full h-full grid place-items-center"
     >
-      <img src="/graduate.gif" className="max-w-[90vw]" />
+      <Image alt="graduate" src="/graduate.gif" className="max-w-[90vw]" />
     </div>
   );
 }

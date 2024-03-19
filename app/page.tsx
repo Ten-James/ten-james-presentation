@@ -26,7 +26,7 @@ export default function Home() {
             repeat: Infinity,
           }}
         >
-          <img src="/logo.svg" />
+          <Image src="/logo.svg" alt="logo" />
         </motion.div>
       </div>
       <QrCodePopOver />

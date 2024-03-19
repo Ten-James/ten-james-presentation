@@ -2,6 +2,7 @@
 import { NextPressentation } from "@/lib/presentation-parts";
 import { GithubIcon, LinkedinIcon } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter, usePathname } from "next/navigation";
 
 export default function Page() {
@@ -10,7 +11,8 @@ export default function Page() {
   return (
     <div className="w-8/12 flex gap-2 flex-col lg:flex-row justify-center items-center">
       <div className="relative cursor-pointer">
-        <img
+        <Image
+          alt="Me"
           onClick={() => router.push(NextPressentation(pathname))}
           src="/me.jfif"
         />

@@ -38,8 +38,8 @@ export default function Page() {
       <div className="w-7/12 grid lg:grid-cols-3 place-items-center">
         {abilities
           .filter((_, index) => index < state)
-          .map((ability) => (
-            <div className="flex flex-col items-center gap-2">
+          .map((ability, index) => (
+            <div key={index} className="flex flex-col items-center gap-2">
               {ability.icon}
               <p className="uppercase text-center text-[2rem]">
                 {ability.name}
