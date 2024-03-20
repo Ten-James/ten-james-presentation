@@ -26,9 +26,9 @@ const projectsInfo: JobsInfo = {
     name: "MatApp",
     link: "github.com/Ten-James/matapp",
     desc: ["Restaurants app.", "Managing orders, foods and ingredients."],
-    stack: ["React", "Typescript", "SocketIO", "Express"],
+    stack: ["React", "TS", "SocketIO", "Express"],
     image: "/matapp.png",
-    imageClass: "lg:w-6/12 translate-y-[-20%]",
+    imageClass: "lg:w-6/12 lg:translate-y-[-20%]",
   },
   Astronomic: {
     name: "Astronomic",
@@ -46,7 +46,7 @@ const projectsInfo: JobsInfo = {
       "Search and download images.",
       "Firebase realtime database.",
     ],
-    stack: ["React", "Typescript", "Firebase"],
+    stack: ["React", "TS", "Firebase"],
     image: "/unsplarty.png",
     imageClass: "lg:w-5/12 translate-y-[-20%]",
   },
@@ -84,7 +84,7 @@ export default function Page({
         alt={project}
         className={`w-4/6 mx-auto ${projectsInfo[project].imageClass} lg:absolute lg:bottom-10 lg:left:10`}
       />
-      <div className="absolute bottom-8 right-8 flex gap-1 lg:gap-4">
+      <div className="absolute bottom-8 right-1/2 translate-x-[50%] lg:translate-x-0 lg:right-8 flex gap-1 lg:gap-4">
         {projectsInfo[project].stack.map((stack, index) => (
           <p
             className=" uppercase font-light text-lg lg:text-4xl bg-slate-200 text-black py-1 px-2 lg:py-8 lg:px-12 rounded-full shadow-md"

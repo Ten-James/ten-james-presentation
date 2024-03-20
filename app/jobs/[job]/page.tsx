@@ -31,7 +31,7 @@ const jobsInfo: JobsInfo = {
       "Trying to get run old projects.",
       "Migrating old webs",
     ],
-    stack: ["dotnet", "Javascript", "Umbraco"],
+    stack: ["dotnet", "JS", "Umbraco"],
   },
   Brainsov: {
     name: "Frontend Developer",
@@ -42,13 +42,17 @@ const jobsInfo: JobsInfo = {
       "Bad comunication with others.",
       "Refactoring bad code.",
     ],
-    stack: ["React", "Javascript", "NodeJS", "NextJS"],
+    stack: ["React", "JS", "NextJS"],
   },
   TietoEvry: {
     name: "Frontend Developer Internship",
     title: "TietoEvry",
-    desc: ["Web applications in react.", "Code review for other students."],
-    stack: ["React", "Typescript", "Tanstack"],
+    desc: [
+      "Web applications in react.",
+      "Working on new internal projects",
+      "Code review for other students.",
+    ],
+    stack: ["React", "TS", "Tanstack"],
   },
 };
 
@@ -77,10 +81,10 @@ export default function Page({
           </p>
         ))}
       </div>
-      <div className="absolute bottom-8 right-8 flex gap-1 lg:gap-4">
+      <div className="absolute bottom-8 right-1/2 translate-x-[50%] lg:translate-x-0 lg:right-8 flex gap-1 lg:gap-4">
         {jobsInfo[job].stack.map((stack, index) => (
           <p
-            className="uppercase font-light text-lg lg:text-4xl bg-slate-200 text-black py-1 px-2 lg:py-8 lg:px-12 rounded-full shadow-md"
+            className="uppercase font-light text-lg lg:text-4xl bg-slate-200 text-black py-1 px-3 lg:py-8 lg:px-12 rounded-full shadow-md"
             key={index}
           >
             {stack}
