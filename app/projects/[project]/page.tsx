@@ -26,7 +26,7 @@ const projectsInfo: JobsInfo = {
     name: "MatApp",
     link: "github.com/Ten-James/matapp",
     desc: ["Restaurants app.", "Managing orders, foods and ingredients."],
-    stack: ["React", "Typescript", "SocketIO", "NodeJS", "Express"],
+    stack: ["React", "Typescript", "SocketIO", "Express"],
     image: "/matapp.png",
     imageClass: "lg:w-6/12 translate-y-[-20%]",
   },
@@ -36,7 +36,7 @@ const projectsInfo: JobsInfo = {
     desc: ["Astronomy Game.", "Doging asteroids and collecting points."],
     stack: ["Unity", "C#"],
     image: "/astronomic.webp",
-    imageClass: "lg:w-2/12",
+    imageClass: "w-3/6 lg:w-2/12",
   },
   Unsplarty: {
     name: "Unsplarty",
@@ -46,9 +46,9 @@ const projectsInfo: JobsInfo = {
       "Search and download images.",
       "Firebase realtime database.",
     ],
-    stack: ["React", "Typescript", "UnsplashAPI", "Firebase"],
+    stack: ["React", "Typescript", "Firebase"],
     image: "/unsplarty.png",
-    imageClass: "lg:w-5/12",
+    imageClass: "lg:w-5/12 translate-y-[-20%]",
   },
 };
 
@@ -84,10 +84,10 @@ export default function Page({
         alt={project}
         className={`w-4/6 mx-auto ${projectsInfo[project].imageClass} lg:absolute lg:bottom-10 lg:left:10`}
       />
-      <div className="absolute bottom-10 right-10 flex gap-2 lg:gap-4">
+      <div className="absolute bottom-8 right-8 flex gap-1 lg:gap-4">
         {projectsInfo[project].stack.map((stack, index) => (
           <p
-            className="font-light text-lg lg:text-4xl bg-slate-200 text-black py-1 px-2 lg:py-8 lg:px-12 rounded-full shadow-md"
+            className=" uppercase font-light text-lg lg:text-4xl bg-slate-200 text-black py-1 px-2 lg:py-8 lg:px-12 rounded-full shadow-md"
             key={index}
           >
             {stack}

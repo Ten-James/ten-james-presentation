@@ -32,7 +32,7 @@ export default function Page() {
           router.push(NextPressentation(pathname));
         }
       }}
-      className="w-full h-full flex flex-col items-center justify-between md:gap-10 p-4 lg:p-0"
+      className="w-full h-full flex flex-col items-center justify-between md:gap-10 p-4 py-8 lg:p-0"
     >
       <p className="uppercase text-center text-[2rem] lg:text-[4rem]">
         What got me there?

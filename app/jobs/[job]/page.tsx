@@ -28,6 +28,7 @@ const jobsInfo: JobsInfo = {
     desc: [
       "Web applications in dontnet core.",
       "Working with Umbraco CMS.",
+      "Trying to get run old projects.",
       "Migrating old webs",
     ],
     stack: ["dotnet", "Javascript", "Umbraco"],
@@ -38,6 +39,7 @@ const jobsInfo: JobsInfo = {
     desc: [
       "Web applications in react.",
       "Administration panel for Moje Karolina",
+      "Bad comunication with others.",
       "Refactoring bad code.",
     ],
     stack: ["React", "Javascript", "NodeJS", "NextJS"],
@@ -75,10 +77,10 @@ export default function Page({
           </p>
         ))}
       </div>
-      <div className="absolute bottom-10 right-10 flex gap-2 lg:gap-4">
+      <div className="absolute bottom-8 right-8 flex gap-1 lg:gap-4">
         {jobsInfo[job].stack.map((stack, index) => (
           <p
-            className="font-light text-lg lg:text-4xl bg-slate-200 text-black py-1 px-2 lg:py-8 lg:px-12 rounded-full shadow-md"
+            className="uppercase font-light text-lg lg:text-4xl bg-slate-200 text-black py-1 px-2 lg:py-8 lg:px-12 rounded-full shadow-md"
             key={index}
           >
             {stack}
