@@ -5,7 +5,7 @@ import { usePathname, useRouter } from "next/navigation";
 type JobsInfo = {
   [key in ProjectsType]: {
     name: string;
-    link: string;
+    link?: string;
     desc: string[];
     stack: string[];
     image: string;
@@ -32,11 +32,10 @@ const projectsInfo: JobsInfo = {
   },
   Astronomic: {
     name: "Astronomic",
-    link: "---",
     desc: ["Astronomy Game.", "Doging asteroids and collecting points."],
     stack: ["Unity", "C#"],
     image: "/astronomic.webp",
-    imageClass: "w-3/6 lg:w-2/12",
+    imageClass: "w-5/12 lg:w-2/12",
   },
   Unsplarty: {
     name: "Unsplarty",
@@ -69,9 +68,11 @@ export default function Page({
       <p className="text-right text-3xl lg:text-[6rem] font-bold">
         {projectsInfo[project].name}
       </p>
-      <p className="text-right text-2xl lg:text-[5rem] font-light">
-        {projectsInfo[project].link}
-      </p>
+      {projectsInfo[project].link && (
+        <p className="text-right text-2xl lg:text-[5rem] font-light">
+          {projectsInfo[project].link}
+        </p>
+      )}
       <div className="flex flex-col gap-2 lg:gap-4 lg:pt-16">
         {projectsInfo[project].desc.map((desc, index) => (
           <p className="text-right text-lg lg:text-4xl font-light" key={index}>
